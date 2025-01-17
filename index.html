@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Simple Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
-    <p>This is a paragraph of text on my webpage.</p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>My Personal Webpage</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#interests">My Interests</a></li>
+                    <li><a href="#accomplishments">My Accomplishments</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! My name is [Your Name] and I am passionate about [Your Passion]. This page is a glimpse into my life, my interests, and my achievements.</p>
+        </section>
+
+        <section id="interests">
+            <h2>My Interests</h2>
+            <p>I have a variety of interests that keep me busy and engaged. Some of my favorite activities include:</p>
+            <ul>
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+                <li>Technology</li>
+            </ul>
+        </section>
+
+        <section id="accomplishments">
+            <h2>My Accomplishments</h2>
+            <p>Throughout my life, I have achieved several milestones that I am proud of, including:</p>
+            <ul>
+                <li>Graduating from [Your University]</li>
+                <li>Winning [Your Award]</li>
+                <li>Completing [Your Project]</li>
+                <li>Volunteering at [Your Organization]</li>
+                <li>Publishing [Your Work]</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>My Personal Webpage &copy; 2025</p>
+    </footer>
 </body>
 </html>
